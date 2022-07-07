@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-function Home() {
+function PlayComputer() {
 
 
 
@@ -8,20 +8,16 @@ function Home() {
 
     <div className="row border">
 
-        <h1> Juega Piedra, Papel, Tijera, Lagarto o Spock</h1>
+        <h1> Elegi tu elección</h1>
     </div>
 
     <div className="row justify-content-center border">
 
         <div className='col-2 border'>
 
-            <Link className="playVsComputer-link" to='/PlayComputer'>Jugar contra computadora</Link>
+
 
         </div>
-
-
-
-        
         
     </div>
 
@@ -35,4 +31,4 @@ function Home() {
 
 }
 
-export default Home;
+export default PlayComputer;
