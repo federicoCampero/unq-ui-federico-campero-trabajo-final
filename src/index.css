@@ -3,11 +3,37 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 
+    background: rgb(0,147,233);
+    background: linear-gradient(90deg, rgba(0,147,233,1) 0%, rgba(0,147,233,1) 0%, rgba(128,208,199,1) 100%);
+
 }
 
-h1{
+h1,p{
   text-align: center;
 }
+
+.seccion{
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: white;
+
+}
+
+.caja-elecciones{
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  /* flex-direction: row;
+  justify-content:
+  space-around
+space-between */
+}
+
+
+/* a{
+  text-decoration: none;
+  color:black;
+} */
 
 
 

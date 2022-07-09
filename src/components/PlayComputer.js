@@ -18,11 +18,11 @@ function PlayComputer() {
         var choiceComputer = choices[Math.floor(Math.random() * (4 - 0 + 1) + 0)];
 
         setComputerChoice(choiceComputer);
+        
 
         setWinner(GameWinner(myChoice,choiceComputer));
-
+ 
     }
-
 
     return <div className="container">
 
@@ -33,7 +33,7 @@ function PlayComputer() {
 
     <div className="row justify-content-center border">
 
-        <div className='col-2 border'>
+        <div className='col-5 border caja-elecciones'>
 
             { choices.map( (choice, index) =>
 
@@ -44,14 +44,7 @@ function PlayComputer() {
 
             )
             
-            
             }
-
-        
-
-            
-
-
 
         </div>
 
