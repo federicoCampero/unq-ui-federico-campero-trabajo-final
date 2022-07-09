@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'
+import GameWinner from '../GameWinner';
 
 function PlayComputer() {
 
@@ -7,12 +8,18 @@ function PlayComputer() {
 
     const [myChoice, setMyChoice] = useState("");
     const [computerChoice, setComputerChoice] = useState("");
+    const [winner, setWinner] = useState("");
 
 
-    const handleClick = (choice) =>{
+    const handleClick = (myChoice) =>{
 
-        setMyChoice(choice);
-        setComputerChoice(choices[Math.floor(Math.random() * (4 - 0 + 1) + 0)])
+        setMyChoice(myChoice);
+
+        var choiceComputer = choices[Math.floor(Math.random() * (4 - 0 + 1) + 0)];
+
+        setComputerChoice(choiceComputer);
+
+        setWinner(GameWinner(myChoice,choiceComputer));
 
     }
 
@@ -48,8 +55,10 @@ function PlayComputer() {
 
         </div>
 
-        <p>mi eleccion es: {myChoice}</p>
-        <p>eleccion computadora: {computerChoice}</p>
+        <p>Mi eleccion es: {myChoice}</p>
+        <p>Eleccion computadora: {computerChoice}</p>
+
+        <p>El ganador es: {winner}</p>
         
     </div>
 
