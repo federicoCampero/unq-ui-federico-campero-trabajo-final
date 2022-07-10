@@ -12,14 +12,14 @@ h1,p{
   text-align: center;
 }
 
-.seccion{
+.section{
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  background-color: white;
+  background-color:rgba(99, 186, 236, 0.795);
 
 }
 
-.caja-elecciones{
+.box-buttons{
   display: flex;
   align-items: center;
   justify-content:space-around;

@@ -6,12 +6,12 @@ function Home() {
 
     return <div className="container">
 
-        <div className="row border">
+        <div className="row">
 
             <h1> Juega Piedra, Papel, Tijera, Lagarto o Spock</h1>
         </div>
 
-        <div className="row justify-content-center border">
+        <div className="row justify-content-center">
             
 
                 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Pierre_ciseaux_feuille_l%C3%A9zard_spock_aligned.svg/220px-Pierre_ciseaux_feuille_l%C3%A9zard_spock_aligned.svg.png"
@@ -23,9 +23,9 @@ function Home() {
 
    
 
-        <div className="row justify-content-center border">
+        <div className="row justify-content-center">
 
-            <div className='col-3 border caja-elecciones'>
+            <div className='col-3 box-buttons'>
 
                 <Link to='/PlayComputer'>
                 <button type="button" 
