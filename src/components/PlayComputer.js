@@ -11,6 +11,7 @@ function PlayComputer() {
     const [winner, setWinner] = useState("");
     const [result, setResult] = useState("");
     const [myScore, setMyScore] = useState(0);
+    const [games, setGames] = useState(0);
 
 
     const handleClick = (myChoice) => {
@@ -22,6 +23,8 @@ function PlayComputer() {
         setComputerChoice(choiceComputer);
 
         setWinner(GameWinner(myChoice, choiceComputer));
+
+        setGames(games+1);
 
     }
 
@@ -36,9 +39,9 @@ function PlayComputer() {
             setResult("Perdiste")
         }
 
-    },[myChoice])
+    },[games])
 
-    return <div className="container">
+    return <div className="container section-gray">
 
         <div className="row">
             <h1> Elegi tu elección: </h1>
@@ -61,10 +64,10 @@ function PlayComputer() {
 
             </div>
 
-            <div className="row justify-content-center">
+            <div className="row justify-content-center ">
 
 
-                <div className='col-3 sm'>
+                <div className='col-3 section-blue'>
 
                     <p>Tu elección es:</p>
 
@@ -72,18 +75,24 @@ function PlayComputer() {
 
                 </div>
 
-                <div className='col-3 sm '>
+                <div className='col-3 section-blue'>
 
                     <p>Elección computadora:</p>
 
                     <p>  {computerChoice} </p>
 
+                    
+
                 </div>
 
 
-                    <p>Resultado:</p>
+                    <h3>Resultado:</h3>
 
                     <p>  {result} </p>
+
+                    <p>Cantidad de partidas:</p>
+
+                    <p>  {games} </p>
 
 
                     <p>Cantidad de victorias:</p>
@@ -96,7 +105,7 @@ function PlayComputer() {
 
         </div>
 
-        <div className="row">
+        <div className="row footer">
             <Link to='/'>
                 <p> Menu Principal </p>
             </Link>

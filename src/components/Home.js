@@ -4,7 +4,7 @@ function Home() {
 
 
 
-    return <div className="container">
+    return <div className="container section-gray">
 
         <div className="row">
 
@@ -23,7 +23,7 @@ function Home() {
 
    
 
-        <div className="row justify-content-center">
+        <div className="row justify-content-center ">
 
             <div className='col-3 box-buttons'>
 

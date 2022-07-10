@@ -8,14 +8,16 @@ body {
 
 }
 
-h1,p{
+h1,h3,p{
   text-align: center;
 }
 
-.section{
+
+
+.section-gray{
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  background-color:rgba(99, 186, 236, 0.795);
+  background-color:#EEEEEE;
 
 }
 
@@ -24,15 +26,15 @@ h1,p{
   align-items: center;
   justify-content:space-around;
   padding: 1rem;
-  /* flex-direction: row;
-  justify-content:
-  space-around
-space-between */
+
 }
 
+.footer{
+  padding-top: 100px;
+
+}
 
 a{
-  /* text-decoration: none; */
   color:black;
 }
 
