@@ -23,6 +23,7 @@ h1,p{
   display: flex;
   align-items: center;
   justify-content:space-around;
+  padding: 1rem;
   /* flex-direction: row;
   justify-content:
   space-around
@@ -30,10 +31,10 @@ space-between */
 }
 
 
-/* a{
-  text-decoration: none;
+a{
+  /* text-decoration: none; */
   color:black;
-} */
+}
 
 
 

@@ -25,7 +25,7 @@ function Home() {
 
         <div className="row justify-content-center border">
 
-            <div className='col-3 border'>
+            <div className='col-3 border caja-elecciones'>
 
                 <Link to='/PlayComputer'>
                 <button type="button" 

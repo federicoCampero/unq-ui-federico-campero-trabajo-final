@@ -6,14 +6,14 @@ const winAgains ={
     "Spock": ["Tijera","Piedra"]
 }
 
-function GameWinner(jugador1, jugador2){
+function GameWinner(choice1, choice2){
 
-    if(jugador1 === jugador2){
-        return "Empate";
-    }else if (winAgains[jugador1].includes(jugador2)){
-        return "jugador1"
+    if(choice1 === choice2){
+        return "draw";
+    }else if (winAgains[choice1].includes(choice2)){
+        return "choice1"
     }else {
-        return "jugador2"
+        return "choice2"
     }
 
     
