@@ -21,8 +21,11 @@ function PlayComputer() {
 
         setComputerChoice(choiceComputer);
 
-
         setWinner(GameWinner(myChoice, choiceComputer));
+
+    }
+
+    useEffect(() => {
 
         if (winner === "draw") {
             setResult("Empate");
@@ -30,10 +33,10 @@ function PlayComputer() {
             setResult("Ganaste");
             setMyScore(myScore + 1);
         } else {
-            setResult("Gano la computadora")
+            setResult("Perdiste")
         }
 
-    }
+    },[myChoice])
 
     return <div className="container">
 
