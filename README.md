@@ -2,6 +2,7 @@
 
 ## Requisitos:
  * Tener instalado node: https://nodejs.org/es/download/
+ * Tener instalado git: https://git-scm.com/downloads
 
 ## Instalación:
 
